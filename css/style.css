@@ -1,0 +1,71 @@
+html {
+    background-color: #252525;
+    color: #EEEEEE;
+    font-family: 'Source Code Pro', 'Noto Sans JP', monospace;
+}
+
+table {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 20px;
+}
+
+th {
+    width: 120px;
+}
+
+table.skills {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.skills > tbody > tr > td {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+div.container, div.inner {
+    padding-left: 20px;
+    padding-right: 10px;
+    width: calc(100% - 30px);
+}
+
+ul.works {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ul.works > li {
+    width: 33%;
+    min-width: 360px;
+    border: 1px solid #EEEEEE;
+}
+
+@media screen and (max-width: 796px){
+    ul.works > li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 797px) and (max-width: 1200px){
+    ul.works > li {
+        width: 49%;
+    }
+}
+
+ul.works > li > h4 {
+    padding-left: 10px;
+    margin-block: 0.5em;
+}
+
+ul.works > li > p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding-inline: 15px;
+    margin-block: 0.5em;
+}
